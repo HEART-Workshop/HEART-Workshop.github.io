@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HEART Workshop 2025: Human Emotion and Affective Response Technologies">
     <title>HEART ❤️ Workshop 2025</title>
+    <link rel="icon" type="image/png" href="files/heart.png">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -142,33 +145,72 @@
 
     <header>
         <h1>Human Emotion and Affective Response Technologies</h1>
-        <p>Advancing Affective Behavior in Human-Computer Interaction</p>
+        <p>Advancing Affective Behavior in Human-Computer Interaction at ICPRAM 2025</p>
         <span class="heart-emoji">❤️</span>
     </header>
 
     <section>
         
         
-<nav style="background-color: #09339c; padding: 10px; text-align: center;">
-    <a href="#scope" style="color: white; margin: 0 15px; text-decoration: none;">Workshop Scope</a>
-    <a href="#topics" style="color: white; margin: 0 15px; text-decoration: none;">Topics</a>
-    <a href="#dates" style="color: white; margin: 0 15px; text-decoration: none;">Important Dates</a>
-    <a href="#organizers" style="color: white; margin: 0 15px; text-decoration: none;">Organizers</a>
-</nav>
+        
+        <nav style="background-color: #09339c; padding: 10px; text-align: center; position: relative;">
+            <a href="#scope" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Workshop Scope</a>
+            <a href="#topics" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Topics</a>
+            <a href="#dates" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Important Dates</a>
+            <a href="#paper-submission" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Submission Guidelines</a>
+            <div style="display: inline-block; position: relative;">
+                <a href="#organizers" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Organization</a>
+                <div style="display: none; position: absolute; background-color: white; color: #09339c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 4px; padding: 10px; z-index: 1000; text-align: left;">
+                    <a href="#organizers" style="display: block; margin: 5px 0; text-decoration: none; color: #09339c; padding: 5px 10px;">Organizers</a>
+                    <a href="#program-committee" style="display: block; margin: 5px 0; text-decoration: none; color: #09339c; padding: 5px 10px;">Program Committee</a>
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+            // Dropdown functionality
+            const dropdown = document.querySelector("nav div");
+            const submenu = dropdown.querySelector("div");
+            
+            dropdown.addEventListener("mouseover", () => submenu.style.display = "block");
+            dropdown.addEventListener("mouseout", () => submenu.style.display = "none");
+            
+            // Add hover effect
+            document.querySelectorAll("nav a").forEach(link => {
+                link.addEventListener("mouseover", () => link.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)");
+                link.addEventListener("mouseout", () => link.style.boxShadow = "none");
+            });
+        
+            // Smooth scrolling
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        </script>
+        
+              
+        
 
 <div style="text-align: center; margin: 20px 0;">
-    <img src="files/porto.JPG" alt="Porto" style="width: 100%; max-width: 1100px; height: 50%; display: block; margin: auto;">
+    <img src="files/porto.JPG" alt="Porto" 
+         style="width: 100%; max-width: 1100px; height: 200px; object-fit: cover; display: block; margin: auto;">
 </div>
 
 
-<h2 id="scope">Workshop Scope</h2>
-        <p>The HEART workshop aims to explore the latest advancements in affective computing, focusing on how systems can
+<h2 id="scope">Scope</h2>
+        <p style="text-align: justify;">The HEART workshop aims to explore the latest advancements in affective computing, focusing on how systems can
             recognize, interpret, and respond to human emotions to improve user experiences in Human-Computer
             Interaction (HCI). This workshop will gather interdisciplinary experts to discuss technological, ethical, and
             practical aspects of building emotionally responsive systems across various fields, such as healthcare,
             education, entertainment, and AI-driven applications.</p>
 
-        <p>By combining perspectives from cognitive science, psychology, computer science, and AI, the workshop seeks to
+        <p style="text-align: justify;">By combining perspectives from cognitive science, psychology, computer science, and AI, the workshop seeks to
             advance the development of emotionally intelligent systems that enhance user interaction, engagement, and
             satisfaction. It will also address the ethical implications of these technologies, particularly in terms of
             data privacy and the responsible use of emotional information.</p>
@@ -234,24 +276,70 @@
     <section class="section">
         <h2 id="dates" class="title is-3">Important Dates</h2>
         <ul>
-            <li><strong>Submission deadline:</strong> 19 June 2024 (AoE)</li>
-            <li><strong>Notification of acceptance:</strong> 14 July 2024</li>
-            <li><strong>Camera-ready deadline:</strong> 01 Aug 2024</li>
-            <li><strong>Workshop date:</strong> 15 Sep 2024</li>
+            <li><strong>Submission deadline:</strong> 18 December 2024 (AoE)</li>
+            <li><strong>Authors Notification:</strong> 14 January 2025</li>
+            <li><strong>Camera-ready deadline:</strong> 22 January 2025</li>
+            <li><strong>Workshop date:</strong> 23-25 February 2025</li>
         </ul>
     </section>
 
-    <section>
-        <h2 id="organizers" class="title is-3">Organizers</h2>
-        <ul>
-            <li>Javier Lorenzo-Navarro  - Universidad de Las Palmas de Gran Canaria</li>
-            <li>David Freire-Obregón  - Universidad de Las Palmas de Gran Canaria</li>
-            <li>João C. Neves - Universidade da Beira Interior</li>
+    <section id="paper-submission" style="margin: 30px auto; max-width: 1100px; padding: 20px; background-color: #ffffff; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <h2 class="title is-3" style="color: #09339c; margin-bottom: 15px;">Paper Submission</h2>
+        <p>Prospective authors are invited to submit papers in any of the topics listed above. Instructions for preparing the manuscript (in Word and Latex formats) are available at: <a href="https://icpram.scitevents.org/Templates.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Paper Templates</a>. Please also check the <a href="https://icpram.scitevents.org/Guidelines.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Guidelines</a>.</p>
+        <p>Papers must be submitted electronically via the web-based submission system using the appropriate button below.</p>
+    
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="http://www.insticc.org/primoris/DirectLink.aspx?idEvent=nUEAikQlNEA=&roleName=AKC6/t1R9Gs=&type=FNiX60z6Am0=" target="_blank" style="display: inline-block; background-color: #09339c; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                Submit Paper
+            </a>
+        </div>
+    
+        <h3 style="color: #09339c; margin-top: 20px;">Publications</h3>
+        <p>After thorough reviewing by the workshop program committee, all accepted papers will be published in a special section of the conference proceedings book - under an ISBN reference and on digital support.</p>
+        <p>All papers presented at the conference venue will be available at the <a href="http://www.scitepress.org/DigitalLibrary/" target="_blank" style="color: #09339c; text-decoration: none;">SCITEPRESS Digital Library</a>. SCITEPRESS is a member of <a href="http://www.crossref.org/" target="_blank" style="color: #09339c; text-decoration: none;">CrossRef</a>, and every paper is given a DOI (Digital Object Identifier).</p>
+    
+        <h3 style="color: #09339c; margin-top: 20px;">Author's Kit</h3>
+        <ul style="list-style-type: circle; padding-left: 20px;">
+            <li><a href="https://icpram.scitevents.org/Guidelines.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Guidelines</a></li>
+            <li><a href="https://icpram.scitevents.org/Templates.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Templates</a></li>
+            <li><a href="https://icpram.scitevents.org/Glossary.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Glossary</a></li>
+            <li><a href="https://icpram.scitevents.org/NormsPlagiarism.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Norms and Plagiarism</a></li>
         </ul>
     </section>
+    
+
+    <section id="organizers">
+        <h2 class="title is-3">Organizers</h2>
+        <ul>
+            <li><a href="https://mozart.dis.ulpgc.es/~javier/">Javier Lorenzo-Navarro</a> - Universidad de Las Palmas de Gran Canaria</li>
+            <li><a href="https://davidfreire.github.io">David Freire-Obregón</a>  - Universidad de Las Palmas de Gran Canaria</li>
+            <li><a href="https://www.di.ubi.pt/~jcneves/">João C. Neves</a> - Universidade da Beira Interior</li>
+        </ul>
+    </section>
+    
+
+    <section id="program-committee">
+        <h2 class="title is-3">Program Committee</h2>
+        <ul>
+            <p>Luigi Celona, University of Milano-Bicocca, Italy</p>
+            <p>Raquel Justo Blanco, University of the Basque Country, Spain</p>
+            <p>Chiara Pero, University of Salerno, Italy</p>
+            <p>Paola Barra, Università degli Studi di Napoli Parthenope, Italy</p>
+            <p>Alessandra Rossi, University of Hertfordshire, United Kingdom</p>
+            <p>Sanaz Nikghadam-Hojjati, Universidade Nova de Lisboa UNINOVA, Portugal</p>
+            <p>Lola Cañamero, CY Cergy Paris University, France</p>
+            <p>Javier Marín Morales, Universidad Politécnica de Valencia, Spain</p>
+            <p>Agnieszka Dubiel, Lodz University of Technology, Poland</p>
+            <p>Dorota Kaminska, Lodz University of Technology, Poland</p>
+        </ul>
+        <p style="text-align: center; margin-top: 20px; font-size: 1.2em;">
+            We would like to extend our heartfelt gratitude to the Program Committee members for their invaluable contributions and dedication to making this workshop a success. Your expertise and commitment are deeply appreciated.
+        </p>
+    </section>
+    
 
     <footer>
-        <p>&copy; 2025 HEART Workshop | Created by <a href="#">HEART Organization</a></p>
+        <p>&copy; 2025 HEART Workshop | Created by <a href="https://davidfreire.github.io">David Freire-Obregón</a></p>
     </footer>
 
 </body>

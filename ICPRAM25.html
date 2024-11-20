@@ -17,11 +17,11 @@
         }
 
         header {
-            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            background: linear-gradient(135deg, #ed3251, #09339c);
             color: white;
             padding: 20px;
             text-align: center;
-            font-size: 2.5em;
+            font-size: 1.0em;
             font-weight: bold;
         }
 
@@ -45,7 +45,7 @@
         }
 
         h2 {
-            color: #ff758c;
+            color: #09339c;
             font-size: 1.8em;
             margin-bottom: 15px;
         }
@@ -68,26 +68,26 @@
         }
 
         ul li:before {
-            content: '✔️';
+            content: '•';
             position: absolute;
             left: 0;
-            color: #ff758c;
+            color: #09339c;
         }
 
         .dates {
             text-align: center;
             background-color: #fff7f9;
-            border: 1px solid #ff7eb3;
+            border: 1px solid #09339c;
             border-radius: 8px;
             padding: 15px;
             margin: 20px 0;
             font-size: 1.2em;
             font-weight: bold;
-            color: #ff758c;
+            color: #09339c;
         }
 
         footer {
-            background-color: #ff758c;
+            background-color: #09339c;
             color: white;
             text-align: center;
             padding: 20px;
@@ -108,7 +108,7 @@
             background-color: #f3f3f3;
             padding: 15px;
             margin-bottom: 15px;
-            border-left: 5px solid #ff758c;
+            border-left: 5px solid #09339c;
             border-radius: 8px;
             transition: transform 0.2s ease;
         }
@@ -147,11 +147,15 @@
     </header>
 
     <section>
-        <div class="dates">
-            <p><strong>Workshop Date:</strong> 3 February 2025</p>
-        </div>
-
-        <h2>Workshop Scope</h2>
+        
+        
+<nav style="background-color: #09339c; padding: 10px; text-align: center;">
+    <a href="#scope" style="color: white; margin: 0 15px; text-decoration: none;">Workshop Scope</a>
+    <a href="#topics" style="color: white; margin: 0 15px; text-decoration: none;">Topics</a>
+    <a href="#dates" style="color: white; margin: 0 15px; text-decoration: none;">Important Dates</a>
+    <a href="#organizers" style="color: white; margin: 0 15px; text-decoration: none;">Organizers</a>
+</nav>
+<h2 id="scope">Workshop Scope</h2>
         <p>The HEART workshop aims to explore the latest advancements in affective computing, focusing on how systems can
             recognize, interpret, and respond to human emotions to improve user experiences in Human-Computer
             Interaction (HCI). This workshop will gather interdisciplinary experts to discuss technological, ethical, and
@@ -163,7 +167,7 @@
             satisfaction. It will also address the ethical implications of these technologies, particularly in terms of
             data privacy and the responsible use of emotional information.</p>
 
-        <h2>Topics</h2>
+        <h2 id="topics">Topics</h2>
 
         <div class="topic">
             <h3>1. Emotion Detection and Recognition Technologies</h3>
@@ -219,6 +223,25 @@
                 <li>Addressing biases in emotion detection algorithms and ensuring fairness in affective systems.</li>
             </ul>
         </div>
+    </section>
+
+    <section class="section">
+        <h2 id="dates" class="title is-3">Important Dates</h2>
+        <ul>
+            <li><strong>Submission deadline:</strong> 19 June 2024 (AoE)</li>
+            <li><strong>Notification of acceptance:</strong> 14 July 2024</li>
+            <li><strong>Camera-ready deadline:</strong> 01 Aug 2024</li>
+            <li><strong>Workshop date:</strong> 15 Sep 2024</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 id="organizers" class="title is-3">Organizers</h2>
+        <ul>
+            <li>Javier Lorenzo-Navarro  - Universidad de Las Palmas de Gran Canaria</li>
+            <li>David Freire-Obregón  - Universidad de Las Palmas de Gran Canaria</li>
+            <li>João C. Neves - Universidade da Beira Interior</li>
+        </ul>
     </section>
 
     <footer>

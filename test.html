@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HEART Workshop 2025: Human Emotion and Affective Response Technologies">
+    <title>HEART ❤️ Workshop 2025 - Porto, Portugal</title>
+    <link rel="icon" type="image/png" href="files/heart.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ed3251, #09339c);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.0em;
+            font-weight: bold;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #09339c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #09339c;
+        }
+
+        .dates {
+            text-align: center;
+            background-color: #fff7f9;
+            border: 1px solid #09339c;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #09339c;
+        }
+
+        footer {
+            background-color: #09339c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ffe3eb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .topic {
+            background-color: #f3f3f3;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 5px solid #09339c;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .topic:hover {
+            transform: scale(1.03);
+        }
+
+        .heart-emoji {
+            font-size: 1.5em;
+            margin-left: 10px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>The 1st Workshop on Human Emotion and Affective Response Technologies</h1>
+        <p>Advancing Affective Behavior in Human-Computer Interaction at ICPRAM 2025</p>
+        <span class="heart-emoji">❤️</span> HEART Workshop 2025
+    </header>
+
+    <section>
+        
+        
+        
+        <nav style="background-color: #09339c; padding: 10px; text-align: center; position: relative;">
+            <a href="#scope" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Workshop Scope</a>
+            <a href="#topics" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Topics</a>
+            <a href="#dates" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Important Dates</a>
+            <a href="#paper-submission" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Submission Guidelines</a>
+            <div style="display: inline-block; position: relative;">
+                <a href="#organizers" style="color: white; margin: 0 25px; text-decoration: none; padding: 10px 15px;">Organization</a>
+                <div style="display: none; position: absolute; background-color: white; color: #09339c; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border-radius: 4px; padding: 10px; z-index: 1000; text-align: left;">
+                    <a href="#organizers" style="display: block; margin: 5px 0; text-decoration: none; color: #09339c; padding: 5px 10px;">Organizers</a>
+                    <a href="#program-committee" style="display: block; margin: 5px 0; text-decoration: none; color: #09339c; padding: 5px 10px;">Program Committee</a>
+                </div>
+            </div>
+        </nav>
+        
+        <script>
+            // Dropdown functionality
+            const dropdown = document.querySelector("nav div");
+            const submenu = dropdown.querySelector("div");
+            
+            dropdown.addEventListener("mouseover", () => submenu.style.display = "block");
+            dropdown.addEventListener("mouseout", () => submenu.style.display = "none");
+            
+            // Add hover effect
+            document.querySelectorAll("nav a").forEach(link => {
+                link.addEventListener("mouseover", () => link.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.3)");
+                link.addEventListener("mouseout", () => link.style.boxShadow = "none");
+            });
+        
+            // Smooth scrolling
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            });
+        </script>
+        
+              
+        
+
+<div style="text-align: center; margin: 20px 0;">
+    <img src="files/porto.JPG" alt="Porto" 
+         style="width: 100%; max-width: 1100px; height: 200px; object-fit: cover; display: block; margin: auto;">
+</div>
+
+
+<h2 id="scope">Scope</h2>
+        <p style="text-align: justify;">The HEART workshop aims to explore the latest advancements in affective computing, focusing on how systems can
+            recognize, interpret, and respond to human emotions to improve user experiences in Human-Computer
+            Interaction (HCI). This workshop will gather interdisciplinary experts to discuss technological, ethical, and
+            practical aspects of building emotionally responsive systems across various fields, such as healthcare,
+            education, entertainment, and AI-driven applications.</p>
+
+        <p style="text-align: justify;">By combining perspectives from cognitive science, psychology, computer science, and AI, the workshop seeks to
+            advance the development of emotionally intelligent systems that enhance user interaction, engagement, and
+            satisfaction. It will also address the ethical implications of these technologies, particularly in terms of
+            data privacy and the responsible use of emotional information.</p>
+
+        <h2 id="topics">Topics</h2>
+
+        <div class="topic">
+            <h3>1. Emotion Detection and Recognition Technologies</h3>
+            <ul>
+                <li>Techniques for capturing and analyzing emotions through facial expressions, voice, physiological
+                    signals, and gestures.</li>
+                <li>Machine learning algorithms and AI-driven systems for real-time emotion recognition.</li>
+            </ul>
+        </div>
+
+        <div class="topic">
+            <h3>2. Multimodal Affective Systems</h3>
+            <ul>
+                <li>Combining multiple sensory inputs (EEG, visual, auditory, physiological) to enhance emotional
+                    detection accuracy.</li>
+                <li>Applications of multimodal systems in interactive environments (e.g., gaming, virtual reality, social
+                    robots).</li>
+            </ul>
+        </div>
+
+        <div class="topic">
+            <h3>3. Emotionally Responsive Interfaces</h3>
+            <ul>
+                <li>Systems that adapt based on user emotional states, improving engagement and interaction.</li>
+                <li>Case studies in adaptive user interfaces in areas such as education, entertainment, and customer
+                    support.</li>
+            </ul>
+        </div>
+
+        <div class="topic">
+            <h3>4. Affective Computing in Healthcare and Tourism</h3>
+            <ul>
+                <li>Applications of affective computing in monitoring patient emotions and supporting mental health.</li>
+                <li>Emotion-aware systems in therapy, mental health apps, and well-being technologies.</li>
+                <li>Affective technologies can tailor travel experiences based on tourist emotions, offering
+                    recommendations that match their mood or preferences during the trip.</li>
+            </ul>
+        </div>
+
+        <div class="topic">
+            <h3>5. Affective AI and Emotional Intelligence</h3>
+            <ul>
+                <li>Development of AI that can model, predict, and respond to human emotions in complex scenarios.</li>
+                <li>Emotional AI in customer interactions, virtual assistants, and autonomous systems.</li>
+            </ul>
+        </div>
+
+        <div class="topic">
+            <h3>6. Ethical, Privacy, and Bias Concerns in Affective Computing</h3>
+            <ul>
+                <li>Ethical issues in collecting and using emotional data, including user consent and emotional
+                    manipulation.</li>
+                <li>Addressing biases in emotion detection algorithms and ensuring fairness in affective systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 id="dates" class="title is-3">Important Dates</h2>
+        <ul>
+            <li><strong>Submission deadline:</strong> 18 December 2024 (AoE)</li>
+            <li><strong>Authors Notification:</strong> 14 January 2025</li>
+            <li><strong>Camera-ready deadline:</strong> 22 January 2025</li>
+            <li><strong>Workshop date:</strong> 24 February 2025</li>
+        </ul>
+    </section>
+
+    <section id="paper-submission" style="margin: 30px auto; max-width: 1100px; padding: 20px; background-color: #ffffff; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+        <h2 class="title is-3" style="color: #09339c; margin-bottom: 15px;">Submission Guidelines</h2>
+        <p>Prospective authors are invited to submit papers in any of the topics listed above. Instructions for preparing the manuscript (in Word and Latex formats) are available at: <a href="https://icpram.scitevents.org/Templates.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Paper Templates</a>. Please also check the <a href="https://icpram.scitevents.org/Guidelines.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Guidelines</a>.</p>
+        <p>Papers must be submitted electronically via the web-based submission system using the appropriate button below.</p>
+    
+        <div style="text-align: center; margin: 20px 0;">
+            <a href="http://www.insticc.org/primoris/DirectLink.aspx?idEvent=nUEAikQlNEA=&roleName=AKC6/t1R9Gs=&type=FNiX60z6Am0=" target="_blank" style="display: inline-block; background-color: #09339c; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 1.2em; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                Submit Paper
+            </a>
+        </div>
+    
+        <h3 style="color: #09339c; margin-top: 20px;">Publications</h3>
+        <p>After thorough reviewing by the workshop program committee, all accepted papers will be published in a special section of the conference proceedings book - under an ISBN reference and on digital support.</p>
+        <p>All papers presented at the conference venue will be available at the <a href="http://www.scitepress.org/DigitalLibrary/" target="_blank" style="color: #09339c; text-decoration: none;">SCITEPRESS Digital Library</a>. SCITEPRESS is a member of <a href="http://www.crossref.org/" target="_blank" style="color: #09339c; text-decoration: none;">CrossRef</a>, and every paper is given a DOI (Digital Object Identifier).</p>
+    
+        <h3 style="color: #09339c; margin-top: 20px;">Author's Kit</h3>
+        <ul style="list-style-type: circle; padding-left: 20px;">
+            <li><a href="https://icpram.scitevents.org/Guidelines.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Guidelines</a></li>
+            <li><a href="https://icpram.scitevents.org/Templates.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Templates</a></li>
+            <li><a href="https://icpram.scitevents.org/Glossary.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Glossary</a></li>
+            <li><a href="https://icpram.scitevents.org/NormsPlagiarism.aspx" target="_blank" style="color: #09339c; text-decoration: none;">Norms and Plagiarism</a></li>
+        </ul>
+    </section>
+    
+
+    <section id="organizers">
+        <h2 class="title is-3">Organizers</h2>
+        <ul>
+            <li><a href="https://mozart.dis.ulpgc.es/~javier/">Javier Lorenzo-Navarro</a> - Universidad de Las Palmas de Gran Canaria</li>
+            <li><a href="https://davidfreire.github.io">David Freire-Obregón</a>  - Universidad de Las Palmas de Gran Canaria</li>
+            <li><a href="https://www.di.ubi.pt/~jcneves/">João C. Neves</a> - Universidade da Beira Interior</li>
+        </ul>
+    </section>
+    
+
+    <section id="program-committee">
+        <h2 class="title is-3">Program Committee</h2>
+        <ul>
+            <p>Paola Barra, Università degli Studi di Napoli Parthenope, Italy</p>
+            <p>Luigi Celona, University of Milano-Bicocca, Italy</p>
+            <p>Lola Cañamero, CY Cergy Paris University, France</p>
+            <p>Agnieszka Dubiel, Lodz University of Technology, Poland</p>
+            <p>Dorota Kaminska, Lodz University of Technology, Poland</p>
+            <p>Raquel Justo Blanco, University of the Basque Country, Spain</p>
+            <p>Javier Marín Morales, Universidad Politécnica de Valencia, Spain</p>
+            <p>Sanaz Nikghadam-Hojjati, Universidade Nova de Lisboa UNINOVA, Portugal</p>
+            <p>Chiara Pero, University of Salerno, Italy</p>
+            <p>Alessandra Rossi, University of Hertfordshire, United Kingdom</p>
+        </ul>        
+        <!--<p style="text-align: center; margin-top: 20px; font-size: 1.2em;">
+            We would like to extend our heartfelt gratitude to the Program Committee members for their invaluable contributions and dedication to making this workshop a success. Your expertise and commitment are deeply appreciated.
+        </p>-->
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2025 HEART Workshop | Created by <a href="https://davidfreire.github.io">David Freire-Obregón</a></p>
+    </footer>
+
+</body>
+
+</html>
